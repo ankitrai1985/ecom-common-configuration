@@ -12,3 +12,12 @@ spring:
     url: jdbc:mysql://localhost:3306/raimysqldb
     username: root
     password: 84ankit84
+microservice:
+  payment-service:
+    endpoints:
+      fetchPaymentById:
+        uri:http://PAYMENT-SERVICE/payments/
+  user-service:
+    endpoints:
+      fetchUserById:
+        uri:http://USER-SERVICE/userservice/
